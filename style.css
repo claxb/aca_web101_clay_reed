@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(http://cdn26.us1.fansshare.com/photo/stunningwallpapers/galaxy-hd-wallpaper-gradient-polygon-black-white-wallpaper-232914242.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/11/19/09/nothing-1972646_1280.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -41,7 +41,7 @@ nav > a {
 
 .has-border {
   border-radius: 25px;
-  border: 2px solid #0795C3;
+  border: 2px solidgrey;
   background: none;
   padding: 20px;
 }
