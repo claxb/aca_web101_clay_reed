@@ -8,41 +8,51 @@ body {
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: repeat(2, 1fr) 30% 1fr;
+  grid-template-rows: 1fr 30% repeat(2, 1fr);
+  background: #403B4A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 
 .img {
   display: grid;
   grid-column: 1/2;
   grid-row: 1/3;
-  background-color: green;
 }
 
 .contact {
   display:grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-column: 1/2;
   grid-row: 3/4;
-  background-color: pink;
 }
 
 .ref {
   display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-column: 1/2;
   grid-row: 4/5;
-  background-color: turquoise;
 }
 
 .title {
   display: grid;
+  display: flex;
+  flex-direction: column;
   grid-column: 2/3;
   grid-row: 1/2;
-  background-color: chocolate;
 }
 
 .personal {
   display: grid;
+  display: flex;
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: khaki;
 }
 
 .history {
@@ -57,4 +67,30 @@ body {
   grid-column: 2/3;
   grid-row: 4/5;
   background-color: palegreen;
+}
+
+.img>img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: 0% 0% 0% 1%;
+}
+
+.title>h3 {
+  margin: 4% 0% 0% 2%;
+}
+
+a {
+  margin: 0% 4% 0% 4%;
+}
+
+section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
