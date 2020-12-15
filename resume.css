@@ -1,10 +1,10 @@
 body {
   margin: 0px;
-  background-color: red;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .resume-container {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: repeat(2, 1fr) 30% 1fr;
@@ -96,13 +96,6 @@ section {
   justify-content: center;
 }
 
-.history>a {
-  display: flex;
-  flex-wrap: wrap;
-  height: 50%;
-  width: 100%;
-}
-
 .history>ul {
   height: 50%;
   width: 100%;
@@ -113,5 +106,9 @@ p {
 }
 
 h3 {
-  margin: 0% 0 0 0;
+  margin: 4% 0 0 0;
+}
+
+.history>h3 {
+  margin: 0% ;
 }
