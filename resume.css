@@ -44,6 +44,7 @@ background: linear-gradient(to left, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Fi
   display: grid;
   display: flex;
   flex-direction: column;
+  align-items: center;
   grid-column: 2/3;
   grid-row: 1/2;
 }
@@ -63,9 +64,10 @@ background: linear-gradient(to left, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Fi
 
 .academia {
   display: grid;
+  display: flex;
+  justify-content: center;
   grid-column: 2/3;
   grid-row: 4/5;
-  background-color: palegreen;
 }
 
 .img>img {
@@ -83,18 +85,20 @@ h1 {
 }
 
 a {
-  margin: 0% 4% 0% 4%;
+  margin: 13% 4% 0% 4%;
 }
 
 section {
   height: 100%;
   width: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .history>a {
   display: flex;
+  flex-wrap: wrap;
   height: 50%;
   width: 100%;
 }
@@ -104,6 +108,10 @@ section {
   width: 100%;
 }
 
-h6 {
-  padding-top: 13%;
+p {
+  padding: 0% 5% 0% 5%;
+}
+
+h3 {
+  margin: 0% 0 0 0;
 }
