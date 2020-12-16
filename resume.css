@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-rows: repeat(2, 1fr) 30% 1fr;
-  grid-template-rows: 1fr 30% repeat(2, 1fr);
+  grid-template-rows: 15% 30% repeat(2, 1fr);
   background: #403B4A;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -50,7 +50,6 @@ background: linear-gradient(to left, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Fi
 }
 
 .personal {
-  display: grid;
   display: flex;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -104,11 +103,6 @@ section {
 p {
   padding: 0% 5% 0% 5%;
 }
-
-h3 {
-  margin: 4% 0 0 0;
-}
-
-.history>h3 {
-  margin: 0% ;
+.title>h3 {
+  margin: 0em;
 }
