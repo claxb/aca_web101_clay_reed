@@ -1,97 +1,82 @@
 body {
-  margin: 0px;
-  font-family: 'Sunflower', sans-serif;
+  margin: 0%;
+  background-color: hotpink;
 }
 
-.resume-container {
-  height: 100vh;
+.main-container {
   display: grid;
-  grid-template-columns: 30% minmax(0, 1fr);
-  grid-template-rows: repeat(2, 1fr) 30% minmax(0, 1fr);
-  grid-template-rows: 1fr 30% repeat(2, 1fr);
-  background: #403B4A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.img {
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 1/3;
-}
-
-.contact {
-  display:grid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.ref {
-  display: grid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-
-.title {
-  display: grid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.personal {
-  display: grid;
-  display: flex;
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.history {
-  display: flex;
-  align-items: center;
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.academia {
-  display: grid;
-  display: flex;
-  justify-content: center;
-  grid-column: 2/3;
-  grid-row: 4/5;
-}
-
-.img>img {
-  display: cover:
+  grid-template-areas: 
+  'img name contact'
+  'img history about'
+  'work-ref details school';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
-  height: 100%;
+  100%
+  margin: 0%;
 }
 
-h1 {
-  margin: 0% 0% 0% 1%;
+.item1 {
+  grid-area: img;
+  }
+
+  .item1>img {
+    width: 100%;
+    height: 100%;
+  }
+
+.item2 {
+  grid-area: contact;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: lightsalmon;
 }
 
-p {
-  margin: 0em;
-  padding: 0% 5% 0% 5%;
+.item2>section {
+  display: flex;
+  flex-direction: column;
 }
 
-.title>h3 {
-  margin: 0em;
+.item3 {
+  grid-area: work-ref;
+  background-color: midnightblue;
 }
 
-h3 {
-  padding-left: 5%;
+.item4 {
+  grid-area: name;
+  background-color: lightpink;
 }
 
-.personal>h3 {
-  color: blueviolet;
+.item5 {
+  grid-area: about;
+  background-color: darkgoldenrod;
+}
+
+.item6 {
+  grid-area: history;
+  background-color: mediumturquoise;
+}
+
+.item7 {
+  grid-area: details;
+  background-color: steelblue;
+}
+
+.item8 {
+  grid-area: school;
+  background-color: mintcream;
+}
+
+@media (max-width: 576px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'img name'
+    'contact about'
+    'history work-ref'
+    'details school';
+  }
 }
