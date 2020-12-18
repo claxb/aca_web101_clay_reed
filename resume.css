@@ -1,6 +1,8 @@
 body {
   margin: 0%;
-  background-color: hotpink;
+  background: #e65c00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to lrft, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main-container {
@@ -29,7 +31,6 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: lightsalmon;
 }
 
 .item2>section {
@@ -39,32 +40,26 @@ body {
 
 .item3 {
   grid-area: work-ref;
-  background-color: midnightblue;
 }
 
 .item4 {
   grid-area: name;
-  background-color: lightpink;
 }
 
 .item5 {
   grid-area: about;
-  background-color: darkgoldenrod;
 }
 
 .item6 {
   grid-area: history;
-  background-color: mediumturquoise;
 }
 
 .item7 {
   grid-area: details;
-  background-color: steelblue;
 }
 
 .item8 {
   grid-area: school;
-  background-color: mintcream;
 }
 
 @media (max-width: 576px) {
