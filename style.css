@@ -1,7 +1,7 @@
 body {
   font-family: 'Nova Slim', cursive;
   margin: 0%;
-  background-image: url(https://cdn.pixabay.com/photo/2020/01/21/19/52/windmills-4783844_1280.jpg);
+  background-image: url(https://vastphotos.com/files/uploads/photos/10230/great-plains-black-white-l.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
 }
@@ -79,7 +79,7 @@ h4 {
 @media (max-width: 576px) { 
   body {
     margin: 0%;
-    background-image: url(https://cdn.pixabay.com/photo/2020/01/21/19/52/windmills-4783844_1280.jpg);
+    background-image: url(https://vastphotos.com/files/uploads/photos/10230/great-plains-black-white-l.jpg);
     background-repeat: no-repeat;
     background-size: auto 100vh;
   }
