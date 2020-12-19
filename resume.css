@@ -1,4 +1,5 @@
 body {
+  font-family: 'Marvel', sans-serif;
   margin: 0%;
   background: #ADA996;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
@@ -13,7 +14,8 @@ body {
   'work-ref details school';
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  width: 100%;
+  width: auto;
+  height: 100%;
   margin: 0%;
 }
 
@@ -22,7 +24,7 @@ body {
   }
 
   .item1>img {
-    width: 75%;
+    width: 80%;
     height: auto;
   }
 
@@ -32,6 +34,34 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+a {
+  color: black;
+}
+
+a[href*="instagram.com/"] {
+  background:url(https://www.instagram.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+}
+
+a[href*="twitter.com/"] {
+  background:url(https://twitter.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+}
+
+a[href*="youtube.com/"] {
+  background:url(https://www.youtube.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+}  
+
+a[href*="facebook.com/"] {
+  background:url(https://www.facebook.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+  } 
 
 .item2>section {
   display: flex;
@@ -79,7 +109,7 @@ body {
   }
 
   .item3 {
-    margin: -45% 0% 0% 0%;
+    margin: -60% 0% 0% 0%;
   }
 
   section {
@@ -90,5 +120,12 @@ body {
     text-align: center;
   }
 
+  h1 {
+    text-align: center;
+  }
+
+  .item2 {
+    margin: -20% 0% 0% 0%;
+  }
 
 }
