@@ -1,0 +1,68 @@
+body {
+  color: black;
+  opacity: .7;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url(https://cdn.pixabay.com/photo/2018/02/17/14/15/pattern-3160023_1280.jpg);
+}
+
+div {
+  display: grid;
+  place-items: center;
+}
+
+.span-12 {
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+.span-6 {
+  grid-column: 1 / 7;
+  text-align: center;
+}
+
+.span-4 {
+  grid-column: 4 / 9;
+  text-align: center;
+}
+
+.span-2 {
+  grid-column: -1 / 7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+a {
+  color: black;
+  opacity: .7;
+}
+
+a[href*="instagram.com/"] {
+  background:url(https://www.instagram.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+}
+
+a[href*="twitter.com/"] {
+  background:url(https://twitter.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+}
+
+a[href*="youtube.com/"] {
+  background:url(https://www.youtube.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+}  
+
+a[href*="facebook.com/"] {
+  background:url(https://www.facebook.com/favicon.ico) no-repeat right center;
+  width: 75%;
+  text-align: center;
+  } 
